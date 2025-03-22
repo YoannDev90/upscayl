@@ -1,7 +1,9 @@
 import { atom } from "jotai";
 import ar from "../locales/ar.json";
 import en from "../locales/en.json";
+import tr from "../locales/tr.json";
 import ru from "../locales/ru.json";
+import uk from "../locales/uk.json";
 import ja from "../locales/ja.json";
 import zh from "../locales/zh.json";
 import es from "../locales/es.json";
@@ -10,16 +12,19 @@ import de from "../locales/de.json";
 import vi from "../locales/vi.json";
 import id from "../locales/id.json";
 import pt from "../locales/pt.json";
+import ptBR from "../locales/pt-br.json";
 import { atomWithStorage } from "jotai/utils";
 
 // Define the shape of the translations
 type Translations = typeof en;
-type Locales = "ar" | "en" | "ru" | "ja" | "zh" | "es" | "fr" | "de" | "vi" | "pt" | "id";
+type Locales = "ar" | "en" | "tr" | "ru" | "uk" | "ja" | "zh" | "es" | "fr" | "de" | "vi" | "pt" | "ptBR" | "id";
 
 const translations: Record<Locales, Translations> = {
   ar,
   en,
+  tr,
   ru,
+  uk,
   ja,
   zh,
   es,
@@ -28,6 +33,7 @@ const translations: Record<Locales, Translations> = {
   vi,
   id,
   pt,
+  ptBR,
 };
 
 // Create a type for nested key paths
